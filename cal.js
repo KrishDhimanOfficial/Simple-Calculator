@@ -11,9 +11,12 @@ display.value = 0;
 // getting numbers for calculation
 numbers.forEach(numbers => {
     numbers.addEventListener("click", () => {
-        display.value = ' ';
+        if (display.value == 0) {
+            display.value = ' ';
+        }
+
         num = numbers.innerHTML;
-        display.value += num ;
+        display.value += num;
     });
 });
 
@@ -21,7 +24,7 @@ numbers.forEach(numbers => {
 op.forEach(op => {
     op.addEventListener("click", () => {
         operator = op.innerHTML;
-        display.value += operator ;``
+        display.value += operator;
     });
 });
 
