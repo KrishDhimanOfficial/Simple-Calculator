@@ -14,9 +14,9 @@ numbers.forEach(numbers => {
         if (display.value == 0) {
             display.value = ' ';
         }
-
         num = numbers.innerHTML;
         display.value += num;
+
     });
 });
 
