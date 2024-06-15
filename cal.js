@@ -29,7 +29,6 @@ op.forEach(op => {
 });
 
 // result
-
 result.addEventListener("click", () => {
     let res = eval(display.value);
     display.value = res;
